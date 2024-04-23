@@ -1,4 +1,4 @@
-PER 8408- 2023/2024
+DART_2DA_ED
 ================
 
 Usaremos este repositorio para nuestro trabajo colaborativo a través del curso.
@@ -46,3 +46,6 @@ En este punto, tienes el repositorio local actualizado. Haz las adiciones necesa
 
 ### Parte V: Abrir una Pull Request
 * En GitHub, haz una ``Pull Request`` o solicitd de cambios, para que pueda verificar tus ejercicios y aceptarlos en la rama master del repositorio original si todo está bien y no hay conflictos. El origen debe ser el repositorio de tu cuenta de GitHub y, el destino, este repositorio.
+
+
+README model taked from https://github.com/UnirCs/DWFS-PER8408-2324
