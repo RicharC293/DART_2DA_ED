@@ -20,7 +20,7 @@ Las instrucciones de las partes IV y V las tendrás que llevar a cabo siempre qu
 
 * Establece un 'remote', siendo este el repositorio original:
 
-       git remote add upstream https://github.com/UnirCs/DWFS-PER8408-2324
+       git remote add upstream https://github.com/RicharC293/DART_2DA_ED.git
 
 ### Parte III: Mantener el repositorio local actualizado
 * Busca cualquier cambio en el remote (en el repositorio original):
