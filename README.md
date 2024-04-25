@@ -49,3 +49,7 @@ En este punto, tienes el repositorio local actualizado. Haz las adiciones necesa
 
 
 README model taked from https://github.com/UnirCs/DWFS-PER8408-2324
+
+### Para crear un ejercicio
+* En cada tema 1.<Tema> existe una carpeta llamada *ejercicios* dentro de ella se ecuentra el archivo *EJERCICIO.md* que contendrá el ejercicio a realizar. 
+* Crear una carpeta que tenga la siguiente estructura *nombre_apellido* sin caracteres especiales y dentro de ella colocar los ejercicios que se esté solicitando.
