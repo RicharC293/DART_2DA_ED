@@ -29,11 +29,11 @@ Las instrucciones de las partes IV y V las tendrás que llevar a cabo siempre qu
 
 * Sitúate en la rama master de tu fork:
 
-       git checkout master
+       git checkout main
 
 * Fusiona los cambios del 'remote' (repositorio original) en tu rama master (repositorio local):
 
-         git merge upstream/master
+         git merge upstream/main
 
 ### Parte IV: Modificar el contenido del repositorio
 En este punto, tienes el repositorio local actualizado. Haz las adiciones necesarias en el repositorio, de acuerdo con el ejercicio específico. Recuerda que debes entregar los ejercicios dentro de la carpeta del tema correspondiente, y además crear una carpeta con tu nombre, donde pondrás los archivos de tus ejercicios.
