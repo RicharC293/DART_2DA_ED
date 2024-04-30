@@ -11,5 +11,5 @@ Vamos a descubir con la ayuda del Editor de código las funciones que nos provee
 ``` 
 final mapa = {};
 mapa.add(5); // Es esto posible?
-test
+
 ```
