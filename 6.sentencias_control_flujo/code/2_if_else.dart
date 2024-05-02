@@ -6,6 +6,13 @@ import 'dart:io';
 
 main() {
   /// Condicion if else simple
+  /// ``` dart
+  /// if (condicion) {
+  ///     operacion 
+  /// } else {
+  ///   operacion  
+  /// }
+  /// ```
   stdout.writeln("¿Cuál es tu edad?"); // ingresa la edad
   int? edad = int.parse(stdin.readLineSync() ??
       '0'); // entrada de datos por consola, es un string opcional
