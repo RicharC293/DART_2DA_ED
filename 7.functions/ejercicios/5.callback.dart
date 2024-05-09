@@ -38,9 +38,10 @@ void otraFuncion(Function onSave) {
 
 /// Una funcion void
 /// Pendiente revisar este caso
-// void funcionVoid(VoidCallback void1) {
-//   void1();
-// }
+/// void funcionVoid(VoidCallback void1)
+void funcionVoid(void Function() void1) {
+  void1();
+}
 
 /// Tipos de datos que vamos a retornar 
 /// String -> el valor que puede retornar la funcion
