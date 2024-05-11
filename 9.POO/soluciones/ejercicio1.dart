@@ -2,8 +2,9 @@ void main() {
   final cuentaZero = Cuenta.zero(titular: 'Richar');
   final cuenta = Cuenta(titular: 'Richar', cantidad: 100.0);
 
-  cuentaZero.retirar(10);
+  cuenta.retirar(10);
   print(cuenta.cantidadOrZero);
+  print(cuenta.toString());
 }
 
 
