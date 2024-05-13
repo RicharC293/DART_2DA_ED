@@ -18,7 +18,6 @@ void main() async {
 
   print("Fin del main");
 
-
   /// Tip de clase: para escuchar multiples veces el mismo stream se puede usar el método .broadcast()
   /// final streamController = StreamController<String>.broadcast();
   /// streamController.stream.listen((event) {
@@ -38,6 +37,5 @@ Future<void> finDeAnio(StreamController streamController) async {
     }
     streamController.sink.add(i.toString());
   }
-  await
-  streamController.close();
+  await streamController.close();
 }
