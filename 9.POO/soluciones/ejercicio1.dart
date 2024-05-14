@@ -7,8 +7,6 @@ void main() {
   print(cuenta.toString());
 }
 
-
-
 class Cuenta {
   final String titular;
   double? cantidad;
@@ -18,7 +16,7 @@ class Cuenta {
   /// Podemos crear varios constructores por nombre, como lo ves en este ejemplo
   Cuenta.zero({required this.titular, this.cantidad = 0});
 
-  String get titularCuente => this.titular;
+  String get titularCuenta => this.titular;
 
   String get cantidadEnCuenta => this.cantidad?.toStringAsFixed(2) ?? '0.00';
 
@@ -34,8 +32,10 @@ class Cuenta {
 
   //metodos especiales
   void ingresar(double cantidad) {
-    if (cantidad < 0) return;
-    this.cantidad = cantidad;
+    // if(cantidad < 0 ) return;
+    if (cantidad >= 0) {
+      this.cantidad = cantidad;
+    }
   }
 
   void retirar(double cantidad) {

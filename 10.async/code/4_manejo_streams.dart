@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 /***
  * 
@@ -6,7 +7,7 @@ import 'dart:async';
  * 
  */
 
-void main() {
+Future<void> main() async {
   /// Crear un stream
   /// Los streams tambien tienen un control de typos ej <String>
   final streamController = StreamController<String>();
@@ -21,28 +22,26 @@ void main() {
   /// Los streams en Flutter se usan para controlar los eventos de los widgets, para controlar eventos en tiempo real
   streamController.stream.listen((event) {
     print("Stream: $event");
-  },
-  onError: (error) {
+  }, onError: (error) {
     print("Error: $error");
-  },
-  onDone: () {
+  }, onDone: () {
     print("Se completo el stream");
-  },
-  cancelOnError: false
-  );
+  }, cancelOnError: false);
 
   /// Agregar datos al stream
   streamController.sink.add("Hola Mundo");
 
-  /// Control de errores 
+  /// Control de errores
   /// El método listen tiene parámetros
   /// onData: se ejecuta cuando el stream tiene datos
   /// onError: se ejecuta cuando el stream tiene un error
   /// onDone: se ejecuta cuando el stream se completa
   /// cancelOnError: es un bool que indica si se cancela el stream cuando tiene un error
-  
-  /// Forzar un error 
+
+  /// Forzar un error
   streamController.sink.addError("Error");
+
+  // await simulateStreamAddValue(streamController);
 
   /// Cerrar el stream
   /// Cuando se cierra el stream ya no se puede agregar datos al stream
@@ -53,4 +52,12 @@ void main() {
   // streamController.sink.add("Hola Mundo"); // Error
 
   print("Fin del main");
+}
+
+Future<void> simulateStreamAddValue(
+    StreamController<String> streamController) async {
+  for (var i = 0; i <= 10; i++) {
+    await Future.delayed(const Duration(seconds: 1));
+    streamController.sink.add("Nuevo valor: $i");
+  }
 }
