@@ -23,7 +23,6 @@ hs_err_pid*
 .classpath
 .buildpath
 Servers
-bin
 
 # Netbeans IDE.
 nbproject/private/
